@@ -1,37 +1,16 @@
-## Welcome to GitHub Pages
+## Easy Trajectories
 
-You can use the [editor on GitHub](https://github.com/Chickenhawk3001/easy_trajectories/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+A simple, easy, and accurate trajectory simulator made in Rust. It only requires a few variables to be known, things like mass of the projectile, velocity, launch angle, and even allows for projectiles with drag!
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Example: The find_max_distance Function
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Input 6 values: Drag, Velocity, Gravity, Mass, Vertical Distance (difference between target altitude and your altitude), and Precision (in how many decimal places for the angle). Receive the distance and the angle for that distance.
 
 ```markdown
-Syntax highlighted code block
+use easy_trajectories as etraj;
 
-# Header 1
-## Header 2
-### Header 3
+let (distance, angle) = etraj::simulation::find_max_distance(drag, velocity, gravity, mass, vertical_distance, precision);
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+println!("Distance : {}", distance);
+println!("Angle    : ()", angle);
 ```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Chickenhawk3001/easy_trajectories/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
