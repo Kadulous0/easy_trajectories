@@ -1,8 +1,14 @@
 [package]
 name = "easy_trajectories"
-version = "1.0.0"
+description = "Simple to use trajectory calculator with drag."
+version = "0.1.1"
 edition = "2021"
 authors = ["Kadulous0"]
+license = "MIT"
+homepage = "https://kadulous0.github.io/easy_trajectories/"
+repository = "https://github.com/Kadulous0/easy_trajectories"
+readme = "README.md"
+keywords = ["math", "physics", "trajectory", "solver"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
