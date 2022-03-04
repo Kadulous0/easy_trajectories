@@ -1,0 +1,11 @@
+[package]
+name = "easy_trajectories"
+version = "1.0.0"
+edition = "2021"
+authors = ["Kadulous0"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+libm = "0.2.2"
+egui = "0.17.0"
