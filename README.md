@@ -20,10 +20,12 @@ Example of the *find_distance_angle()* function:
 ```markdown
 use easy_trajectory as e_traj;
 
-let (distance, angle) = e_traj::simulation::find_distance_angle(drag, velocity, mass, gravity, max_time,precision, vertical_distance);
+let (distance, angle) = e_traj::simulation::find_distance_angle(drag, velocity, mass, gravity, max_time, precision, vertical_distance);
 
 println!("Distance : {}", distance);
-println!("Angle    : ()", angle);
+println!("Angle    : {}", angle);
 ```
 
 More detailed documentation for each function in the simulation.rs file above each function explaining, use case, inputs, outputs, and what numbers should go in. Later I will implement functions to verify inputs are valid instead of manual understanding.
+
+Function names are subject to change, and they will probably change.
