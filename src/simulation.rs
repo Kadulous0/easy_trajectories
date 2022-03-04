@@ -43,7 +43,7 @@ Vertical Distance              all real #'s
 -------------------------------------------
 */
 
-fn find_distance_angle(drag:f64, velocity:f64, mass:f64, gravity:f64, max_time: f64, precision:i8, vertical_distance:f64) -> (f64,f64) {
+pub fn find_distance_angle(drag:f64, velocity:f64, mass:f64, gravity:f64, max_time: f64, precision:i8, vertical_distance:f64) -> (f64,f64) {
 
     // initalize variables
     let delta_time = 0.001; // delta time
@@ -142,7 +142,7 @@ Vertical Distance              all real #'s
 -------------------------------------------
 */
 
-fn find_trajectory_angle(drag:f64, velocity:f64, mass:f64, gravity:f64, max_time:f64, precision:i8, ballistic:bool, distance:f64, vertical_distance:f64) -> (Vec<Value>, f64) {
+pub fn find_trajectory_angle(drag:f64, velocity:f64, mass:f64, gravity:f64, max_time:f64, precision:i8, ballistic:bool, distance:f64, vertical_distance:f64) -> (Vec<Value>, f64) {
 
     // determines max range and panics if requested range is greater than the max range
     let (max_distance, max_dist_angle) = find_distance_angle(drag, velocity, mass, gravity, max_time, precision, vertical_distance);
@@ -251,7 +251,7 @@ Vertical Distance              all real #'s
 -------------------------------------------
 */
 
-fn find_trajectory_distance_time(drag:f64, velocity:f64, mass:f64, angle:f64, gravity:f64, max_time:f64, vertical_distance:f64) -> (Vec<Value>,f64,f64) {
+pub fn find_trajectory_distance_time(drag:f64, velocity:f64, mass:f64, angle:f64, gravity:f64, max_time:f64, vertical_distance:f64) -> (Vec<Value>,f64,f64) {
     // initalize variables
     let delta_time = 0.001; // delta time
     let mut time = 0.0; // reset time
