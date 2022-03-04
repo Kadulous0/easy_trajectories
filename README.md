@@ -2,7 +2,17 @@
 Simple to use trajectory simulations for Rust
 
 ## Install
-(To be implemented)
+To install go to https://crates.io/crates/easy_trajectories and copy the lines under the install area to always get the latest version.
+
+To use easy_trajectories, just add
+
+```markdown
+use easy_trajectories
+```
+or 
+```markdown
+use easy_trajectories as e_traj // <--- or whatever alias you prefer
+```
 
 ## Usage
 
